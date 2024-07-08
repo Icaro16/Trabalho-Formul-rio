@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <script src="formulario.js"></script>
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="banner">
+    <video autoplay loop muted>
+        <source src="videos_imagens/fundo.mp4">
+    </video>
+    </div>
+    <div class="container">
+        <h2>Cadastro para entrevista</h2>
+        <div></div>
+        <div class="inputs">
+            <label for="input">Nome Completo:</label>
+            <input class="inputText" type="nome" id="nome" placeholder="nome" >
+            <label for="input">Idade:</label>
+            <input class="inputText" type="number" id="idade" placeholder="idade" >
+            <label for="">Escolaridade:</label>
+            <input class="inputText" type="text" id="escolaridade" placeholder="escolaridade" >
+            <label for="">Numero de Celular:</label>
+            <input class="inputText" type="number" id="numero" placeholder="(##) # ####-####" >
+            <label for="">E-mail:</label>
+            <input class="inputText" type="email" id="email" placeholder="exemplo@gmail" >
+            <label class="titleRadio" for="radio">Contactar via:</label>
+            <br>
+            <div class="radioConfig1">
+                <label for="Numero">Numero</label>
+                <input class="left1" type="radio" name="Contactar" id="Numero" value="numero">
+            </div>
+            <div class="radioConfig2">
+                <label for="email">Email</label>
+                <input class="left2" type="radio" name="Contactar" id="E-mail" value="email">
+            </div>
+            <button class="botão" type="button" onclick=Enviar()>Enviar</button>
+        </div>
+        <div class="lado direito"></div>
+    </div>
+</html>
